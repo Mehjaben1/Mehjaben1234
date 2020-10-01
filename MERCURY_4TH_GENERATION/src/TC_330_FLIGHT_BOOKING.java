@@ -1,7 +1,6 @@
 
 
 
-import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -50,7 +49,7 @@ public void NavigateURL(TimeUnit SECONDS) {
 			
 		 
 				// Navigate to the specified URL
-				driver.get(MercuryURL);
+				//driver.get(MercuryURL);
 				
 		// Maximize the web browser
 		driver.manage().window().maximize();
