@@ -2,27 +2,34 @@
 <testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57" started-at="2020-09-30T21:15:41 EDT" finished-at="2020-09-30T21:15:41 EDT">
+  <suite name="Default suite" duration-ms="107" started-at="2020-10-01T01:48:41 EDT" finished-at="2020-10-01T01:48:41 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57" started-at="2020-09-30T21:15:41 EDT" finished-at="2020-09-30T21:15:41 EDT">
+    <test name="Default test" duration-ms="107" started-at="2020-10-01T01:48:41 EDT" finished-at="2020-10-01T01:48:41 EDT">
       <class name="TC_330_FLIGHT_BOOKING">
-        <test-method status="FAIL" signature="NavigateURL(java.util.concurrent.TimeUnit)[pri:0, instance:TC_330_FLIGHT_BOOKING@610694f1]" name="NavigateURL" is-config="true" duration-ms="-1601514941881" started-at="2020-09-30T21:15:41 EDT" finished-at="1969-12-31T19:00:00 EST">
-          <exception class="org.testng.TestNGException">
+        <test-method status="FAIL" signature="NavigateURL()[pri:0, instance:TC_330_FLIGHT_BOOKING@610694f1]" name="NavigateURL" is-config="true" duration-ms="60" started-at="2020-10-01T01:48:41 EDT" finished-at="2020-10-01T01:48:41 EDT">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @BeforeTest annotated NavigateURL.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+              <![CDATA[The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @BeforeTest annotated NavigateURL.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:437)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:351)
-at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at TC_330_FLIGHT_BOOKING.NavigateURL(TC_330_FLIGHT_BOOKING.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
 at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
 at org.testng.TestRunner.beforeRun(TestRunner.java:607)
 at org.testng.TestRunner.run(TestRunner.java:578)
@@ -41,26 +48,33 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateURL -->
-        <test-method status="SKIP" signature="Flight_Booking()[pri:1, instance:TC_330_FLIGHT_BOOKING@610694f1]" name="Flight_Booking" duration-ms="0" started-at="2020-09-30T21:15:41 EDT" finished-at="2020-09-30T21:15:41 EDT">
-          <exception class="org.testng.TestNGException">
+        <test-method status="SKIP" signature="Flight_Booking()[pri:1, instance:TC_330_FLIGHT_BOOKING@610694f1]" name="Flight_Booking" duration-ms="0" started-at="2020-10-01T01:48:41 EDT" finished-at="2020-10-01T01:48:41 EDT">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @BeforeTest annotated NavigateURL.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+              <![CDATA[The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @BeforeTest annotated NavigateURL.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:437)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:351)
-at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at TC_330_FLIGHT_BOOKING.NavigateURL(TC_330_FLIGHT_BOOKING.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
 at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
 at org.testng.TestRunner.beforeRun(TestRunner.java:607)
 at org.testng.TestRunner.run(TestRunner.java:578)
@@ -79,11 +93,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Flight_Booking -->
-        <test-method status="SKIP" signature="CloseBrowser()[pri:0, instance:TC_330_FLIGHT_BOOKING@610694f1]" name="CloseBrowser" is-config="true" duration-ms="-1601514941928" started-at="2020-09-30T21:15:41 EDT" finished-at="1969-12-31T19:00:00 EST">
+        <test-method status="SKIP" signature="CloseBrowser()[pri:0, instance:TC_330_FLIGHT_BOOKING@610694f1]" name="CloseBrowser" is-config="true" duration-ms="-1601531321541" started-at="2020-10-01T01:48:41 EDT" finished-at="1969-12-31T19:00:00 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
