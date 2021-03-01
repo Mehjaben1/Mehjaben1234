@@ -137,8 +137,11 @@ public void Flight_Booking() {
 		
 		
 		// Select Service Class (First Class)
-		driver.findElement(By.xpath("/html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[9]/td[2]/font/font/input[2]")).click();
+		driver.findElement(By.name("servClass")).getText();
 		
+		
+		
+		//driver.findElement(By.xpath("//input[@name = 'servClass' and @value = 'First']")).click();
 				
 		// Select Airline
 		Select AirlineSelect = new Select(driver.findElement(By.name("airline")));
@@ -177,7 +180,7 @@ public void Flight_Booking() {
 		 try {
 			 
 		// Close the browser
-			driver.quit();	 
+		//driver.quit();	 
 			
 			} catch (Exception e) {
 				
